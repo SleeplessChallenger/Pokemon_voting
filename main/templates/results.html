@@ -1,0 +1,21 @@
+{% extends 'home.html' %}
+{% block content %}
+
+	{% for p in data %}
+
+
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2">{{ p.nickname, p.superPower, p.rating }}</a> 
+            </div>
+        </div>
+
+        <div class="item">
+           {{ item }}
+        </div>
+    </article>
+
+	{% endfor %}
+
+{% endblock content %}

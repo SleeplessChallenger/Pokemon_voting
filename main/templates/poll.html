@@ -1,0 +1,18 @@
+{% extends 'home.html' %}
+{% block content %}
+
+    <form action="/" method="POST">
+    	{{ form.csrf_token }}
+        {{ form.pokemon_options }}
+
+        <ul>
+            {% for error in form.pokemon_options.errors %}
+            <li style="color:red;">{{ error }}</li>
+            {% endfor %}
+        </ul>
+
+        <input type="submit">
+
+    </form>
+
+{% endblock content %}
