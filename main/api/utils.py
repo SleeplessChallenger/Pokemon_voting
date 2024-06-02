@@ -1,5 +1,6 @@
 from main import db
 from main.models import Pokemon
+from flask_sqlalchemy import SQLAlchemy
 
 
 def populate_db():
